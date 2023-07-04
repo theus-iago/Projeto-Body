@@ -1,0 +1,282 @@
+   #visor {
+    border:3px solid black;
+    border-radius:20%;
+    background-color:white;
+    height:35px;
+    width:115px;
+    margin:5px;
+    position:absolute;
+    top:10.5%;
+    left:6.8%;
+    font: 19pt normal Arial;
+    text-align: center;
+  }
+   @keyframes load {
+    0% {box-shadow:0 0 black inset;}
+    100% {box-shadow:0 -70px red inset;}
+  }
+   .loader {
+      top:8%;
+      left:10%;
+      transform:
+      perspective(50px) rotateX(-5deg);
+      width:10px;
+      height:60px;
+      position:absolute;
+      border:2px solid black;
+      border-radius:5px;
+      animation:
+     load 1s linear infinite alternate;
+    }
+   #loader2 {
+      left:55%;
+    }
+   @keyframes spin {
+      to {transform:rotate(360deg);}
+    }
+   .loader3 {
+      margin:auto;
+      scale:0.2;
+      position:absolute;
+      top:-120%;
+      left:-100%;
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      border-top:8px solid white;
+      border-left:8px solid white;
+      border-right:8px solid rgb(255,255,255,0);
+      animation:spin 0.5s infinite linear;
+    }
+   /* #ligar {
+    border:3px outset #830a0a;
+    border-radius:40%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:10px;
+    padding:5px;
+    position:absolute;
+    top:18%;
+    left:7%;
+  }
+  #desligar {
+    border:3px outset #830a0a;
+    border-radius:40%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:10px;
+    padding:4px;
+    position:absolute;
+    top:18%;
+    left:14%;
+  }
+  */
+   #limpar {
+    border:3px outset #830a0a;
+    border-radius:35%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:4px;
+    position:absolute;
+    top:18%;
+    left:25%;
+  }
+   #apagar {
+    border:3px outset #830a0a;
+    border-radius:35%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:4px;
+    position:absolute;
+    top:18%;
+    left:9%;
+  }
+   #slider {
+    transform:rotate(1deg);
+    accent-color:darkblue;
+    width:100px;
+    position:absolute;
+    left:10%;
+    top:30%;
+    color:red;
+  }
+   #slider2 {
+    transform:rotate(-1deg);
+    accent-color:darkblue;
+    width:100px;
+    position:absolute;
+    left:10%;
+    top:30%;
+  }
+   .controles {
+    transform:rotate(90deg);
+    border: 3px solid black;
+    border-radius:20%;
+    background-color:#000000;
+    font:20%;
+    position:absolute;
+    top:15%;
+    left:-5%;
+    height:16%;
+    width:212px;
+    padding:8px;
+  }
+   #botao0 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:40%;
+    left:88%; 
+  }
+   #botao1 {
+    transform: rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:70%;
+    left:50%; 
+  }
+   #botao2 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:40%;
+    left:50%; 
+  } 
+   #botao3 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:10%;
+    left:50%; 
+  } 
+   #botao4 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:70%;
+    left:63%; 
+  } 
+   #botao5 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:40%;
+    left:63%; 
+  } 
+   #botao6 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:10%;
+    left:63%; 
+  }
+   #botao7 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:70%;
+    left:75%; 
+  }
+   #botao8 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:40%;
+    left:75%; 
+  }  
+   #botao9 {
+    transform:rotate(270.5deg);
+    border:3px outset #830a0a;
+    border-radius:20%;
+    background-color:rgb(110,5,5);
+    color:rgb(255,255,255);
+    font-size:var(--tamanho_do_Botao);
+    padding:;
+    position:absolute;
+    top:10%;
+    left:75%; 
+  }
+  
+  #limpar:active {
+    background-color:#500e0e;
+  }
+  #apagar:active {
+    background-color:#500e0e;
+  }
+  #botao0:active {
+    background-color:#500e0e;
+  }
+  #botao1:active {
+    background-color:#500e0e;
+  }
+  #botao2:active {
+    background-color:#500e0e;
+  }
+  #botao3:active {
+    background-color:#500e0e;
+  }
+  #botao4:active {
+    background-color:#500e0e;
+  }
+  #botao5:active {
+    background-color:#500e0e;
+  }
+  #botao6:active {
+    background-color:#500e0e;
+  }
+  #botao7:active {
+    background-color:#500e0e;
+  }
+  #botao8:active {
+    background-color:#500e0e;
+  }
+  #botao9:active {
+    background-color:#500e0e;
+  }
