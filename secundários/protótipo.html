@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Protótipo</title>
+  <style>
+  *{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+  }
+  body{
+    background-color:rgb(61,90, 115);
+  }
+  .table{
+    position:absolute;
+    height:100%;
+    width:100%;
+    top:-15%;
+    left:10%;
+  }
+    .face{
+      margin:auto;
+      height:120px;
+      width:95px;
+      background-color:#565656;
+      border:2px solid black;
+      border-bottom:4px;
+      border-bottom-left-radius:50%;
+      border-bottom-right-radius:50%;
+      border-radius:45px;
+      position:absolute;
+      top:30%;
+      left:40%;
+    }
+    .eye{
+      height:15px;
+      width:15px;
+      background-color:black;
+      border:1px solid black;
+      border-radius:45%;
+      margin:auto;
+    }
+    @keyframes blink{
+      0%{background-color:white;}
+      10%{background-color:black;}
+      20%{background-color:white;}
+      30%{background-color:black;}
+      40%{background-color:white;}
+      50%{background-color:black;}
+      60%{background-color:white;}
+      70%{background-color:black}
+      80%{background-color:white;}
+      100%{background-color:black;}
+    }
+    #eye-left{
+      position:absolute;
+      top:35%;
+      left:68%;
+    }
+    #eye-right{
+      position:absolute;
+      top:35%;
+      left:15%;
+    }
+    .ear{
+      height:40px;
+      width:15px;
+      border:2px solid black;
+      background-color:#565656;
+    }
+    #ear-left{
+      border-top-left-radius:50%;
+      border-bottom-left-radius:50%;
+      position:absolute;
+      top:34.5%;
+      left:37%;
+    }
+    #ear-right{
+      border-top-right-radius:50%;
+      border-bottom-right-radius:50%;
+      position:absolute;
+      top:34.5%;
+      left:61.5%;
+    }
+    .body{
+      margin:auto;
+      height:150px;
+      width:100px;
+      border:2px solid black;
+      border-radius:35%;
+      background-color:#565656;
+      position:absolute;
+      top:46%;
+      left:40%;
+    }
+    /*
+    .abdomem{
+      margin:auto;
+      height:80px;
+      width:100px;
+      border:2px solid black;
+      border-radius:35%;
+      background-color:#565656;
+      position:absolute;
+      top:30%;
+      left:0.05%;
+    }
+    */
+    .arm{
+      height:55px;
+      width:30px;
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:30%;
+    }
+    #arm-left{
+      transform:rotate(45deg);
+      position:absolute;
+      top:48%;
+      left:30%;
+    }
+    .forearm-left{
+      height:65px;
+      width:30px;
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:30%;
+      position:absolute;
+      top:55%;
+      left:26%;
+    }
+    .hand-left{
+      height:25px;
+      width:30px;
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:30%;
+      position:absolute;
+      top:64%;
+      left:26%;
+    }
+    .thumb-left{
+      height:22px;
+      width:11px;
+      transform:rotate(150deg);
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:38%;
+      position:absolute;
+      top:65.5%;
+      left:34%;
+    }
+    .index-finger-left{
+      height:25px;
+      width:9px;
+      transform:rotate(160deg);
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:38%;
+      position:absolute;
+      top:67.2%;
+      left:32%;
+    }
+    .middle-finger-left{
+      height:26px;
+      width:9px;
+      transform:rotate(175deg);
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:38%;
+      position:absolute;
+      top:67.5%;
+      left:29%;
+    }
+    .ring-finger-left{
+      height:25px;
+      width:9px;
+      transform:rotate(185deg);
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:38%;
+      position:absolute;
+      top:67.3%;
+      left:26%;
+    }
+    .little-finger-left{
+      height:25px;
+      width:8px;
+      transform:rotate(195deg);
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:38%;
+      position:absolute;
+      top:66%;
+      left:23%;
+    }
+    .leg{
+      height:75px;
+      width:30px;
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:30%;
+    }
+    #leg-left{
+      position:absolute;
+      top:55%;
+      left:26%;
+    }
+    #leg-right{
+      position:absolute;
+      top:66%;
+      left:54%;
+    }
+    .knee{
+      height:25px;
+      width:30px;
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:40%;
+    }
+    #knee-left{
+      position:absolute;
+      top:76%;
+      left:54%;
+    }
+    #knee-right{
+      position:absolute;
+      top:76%;
+      left:54%;
+    }
+    .shin-leg{
+      height:65px;
+      width:30px;
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:30%;
+    }
+    #shin-leg-left{
+      
+    }
+    #shin-leg-right{
+      position:absolute;
+      top:79.5%;
+      left:54%;
+    }
+    .foot{
+      height:40px;
+      width:25px;
+      background-color:#565656;
+      border:2px solid black;
+      border-radius:40%;
+    }
+    #foot-left{
+      
+    }
+    #foot-right{
+      transform:rotate(140deg);
+      position:absolute;
+      top:88.5%;
+      left:56%;
+    }
+    .box{
+      height:50px;
+      width:70px;
+      background-color:#000000;
+      border-radius:25%;
+      position:absolute;
+      top:15%;
+      left:15%;
+    }
+    table{
+      position:absolute;
+      top:20%;
+      left:6%;
+    }
+    button{
+      border:2px solid black;
+      background-color:darkred;
+      color:white;
+      font-size:13px;
+      padding:;
+      margin:2px;
+    }
+  </style>
+</head>
+<body>
+  <div class="table">
+     <div class="ear" id="ear-left"></div>
+  <div class="ear" id="ear-right"></div>
+  <div class="face">
+    <div class="eye" id="eye-left"></div>
+    <div class="eye" id="eye-right"></div>
+  </div>
+  <div class="body">
+    <div class="abdomem"></div>
+  </div>
+  <div class="arm" id="arm-left"></div>
+  <div class="forearm-left"></div>
+  <div class="hand-left"></div>
+  <div class="thumb-left"></div>
+  <div class="index-finger-left"></div>
+  <div class="middle-finger-left"></div>
+  <div class="ring-finger-left"></div>
+  <div class="little-finger-left"></div>
+  
+  <!--<div class="leg" id="leg-left"></div>
+ <div class="knee" id="knee-left"></div>
+ <div class="shin-leg" id="shin-leg-left"></div>
+ <div class="foot" id="foot-left"></div>
+ -->
+  <div class="leg" id="leg-right"></div>
+  <div class="knee" id="knee-right"></div>
+  <div class="shin-leg" id="shin-leg-right"></div>
+  <div class="foot" id="foot-right"></div> 
+  </div>
+
+  <div class="box">
+    <table>
+      <tr>
+        <td><button onclick="ligar()">on</button></td>
+        <td><button onclick="desligar()">off</button></td>
+      </tr>
+    </table>
+  </div>
+  <script>
+    const eyeleft= document.getElementById('eye-left')
+    const eyeright= document.getElementById('eye-right')
+    function ligar(){
+      eyeleft.style.cssText='animation:blink 600ms; background-color:white;';
+      eyeright.style.cssText='animation:blink 600ms; background-color:white;';
+    }
+    function desligar(){
+      eyeleft.style.cssText='transition: background 5s; background-color:black;';
+      eyeright.style.cssText='transition: background 5s; background-color:black;';
+    }
+  </script>
+</body>
+</html>
