@@ -176,6 +176,10 @@
   <input type="button" value="" 
   class="botaoLeft" onclick="mover('left')">
 <script>
+  var position1= document.getElementsByClassName('boneco')[0].offsetLeft;
+  var position2= document.getElementsByClassName('boneco')[0].offsetTop;
+    console.log(`Posição X:${position1}px`);
+    console.log(`Posição Y:${position2}px`);
   const boneco= document.querySelector
   ('.boneco')
   const bloco= document.querySelector
@@ -216,10 +220,6 @@
     boneco.style.cssText='transition:background 2s; background-color:blue;';
       }
     }
-  var position1= document.getElementsByClassName('boneco')[0].offsetLeft;
-  var position2= document.getElementsByClassName('boneco')[0].offsetTop;
-    console.log(`Posição X:${position1}px`);
-    console.log(`Posição Y:${position2}px`);
 </script>
 </body>
 </html>
