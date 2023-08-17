@@ -7,6 +7,7 @@
 	width:25px;
   animation:blink 0.9s infinite ease-in-out;	
   animation-direction:alternate-reverse;
+  animation-delay:8s;
 }
 .pupils:nth-child(1) {
 	position:absolute;
