@@ -1,0 +1,30 @@
+.pupils {
+	background-color:#e0ac80;
+	border:2px solid black;
+	border-bottom-left-radius:35%;
+	border-bottom-right-radius:35%;
+	height:25px;
+	width:25px;
+  animation:blink 0.9s infinite ease-in-out;	
+  animation-direction:alternate-reverse;
+}
+.pupils:nth-child(1) {
+	position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+}
+.pupils:nth-child(2) {
+ position:absolute;
+ top:50%;
+ left:50%;
+ transform:translate(-50%,-50%);
+}
+@keyframes blink {
+	0%{
+		transform:translate(-50%, -250%);
+	}
+	100%{
+		transform:translate(-50%, -50%);
+	}
+}
