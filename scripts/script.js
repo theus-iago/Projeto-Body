@@ -120,8 +120,10 @@ if(document.getElementById
     heart.style.cssText='transition:border 2s; transition-delay:1s; border-color:white;'
     blink1.classList = "pupils";
     blink2.classList = "pupils";
+    setTimeout(function() {
     blink1.classList.remove("pupils");
     blink2.classList.remove("pupils");
+    },6000);
     }, 2000);
     simbolo.style.cssText='transition: color 10s; color:white;';
 }else if(document.getElementById('visor').innerHTML=='0010'){
