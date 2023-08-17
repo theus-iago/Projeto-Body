@@ -119,8 +119,8 @@ if(document.getElementById
     loader3.style.cssText='transition:opacity 10s; opacity:100;'
     heart.style.cssText='transition:border 2s; transition-delay:1s; border-color:white;'
     blink1.classList = "pupils";
-    blink1.classList.remove = "pupils";
     blink2.classList = "pupils";
+    blink1.classList.remove = "pupils";
     blink2.classList.remove = "pupils";
     }, 2000);
     simbolo.style.cssText='transition: color 10s; color:white;';
