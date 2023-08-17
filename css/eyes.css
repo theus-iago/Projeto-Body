@@ -5,7 +5,7 @@
 	border-bottom-right-radius:35%;
 	height:25px;
 	width:25px;
-  animation:blink 0.9s infinite ease-in-out;	
+  animation:blink 0.4s 4 ease-in-out;	
   animation-direction:alternate-reverse;
   animation-delay:8s;
 }
