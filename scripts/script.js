@@ -56,8 +56,8 @@ simbolo= document.getElementById('simbolo')
 loader= document.querySelector('div.loader')
 loader2= document.querySelector('div#loader2')
 loader3= document.querySelector('div.loader3')
- blink1  = document.getElementsByTagName("blink")[5];
- blink2  = document.getElementsByTagName("blink")[9];
+ blink1  = document.getElementsByTagName("div")[5];
+ blink2  = document.getElementsByTagName("div")[9];
 loader.style.cssText='animation:StopIteration;'
 loader2.style.cssText='animation:StopIteration;'
 loader3.style.cssText='animation:StopIteration;'
@@ -118,8 +118,8 @@ if(document.getElementById
     loader3.style.cssText='animation:;'
     loader3.style.cssText='transition:opacity 10s; opacity:100;'
     heart.style.cssText='transition:border 2s; transition-delay:1s; border-color:white;'
-    blink1.classList = "blink";
-    blink2.classList = "blink";
+    blink1.clasList("blink");
+    blink2.clasList("blink");
     }, 2000);
     simbolo.style.cssText='transition: color 10s; color:white;';
 }else if(document.getElementById('visor').innerHTML=='0010'){
