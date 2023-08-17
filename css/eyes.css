@@ -6,20 +6,20 @@
 	height:25px;
 	width:25px;
   animation:blink 0.9s infinite ease-in-out;	
-  animation-direction:alternate-reverse;
+  animation-direction:alternate;
   animation-delay:8s;
 }
 .pupils:nth-child(1) {
 	position:absolute;
  top:50%;
  left:50%;
- transform:translate(-50%,-50%);
+ transform:translate(-50%,-250%);
 }
 .pupils:nth-child(2) {
  position:absolute;
  top:50%;
  left:50%;
- transform:translate(-50%,-50%);
+ transform:translate(-50%,-250%);
 }
 @keyframes blink {
 	0%{
