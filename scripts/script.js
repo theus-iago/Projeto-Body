@@ -118,8 +118,8 @@ if(document.getElementById
     loader3.style.cssText='animation:;'
     loader3.style.cssText='transition:opacity 10s; opacity:100;'
     heart.style.cssText='transition:border 2s; transition-delay:1s; border-color:white;'
-    blink1.clasList("blink");
-    blink2.clasList("blink");
+    blink1.clasList = "pupils";
+    blink2.clasList = "pupils";
     }, 2000);
     simbolo.style.cssText='transition: color 10s; color:white;';
 }else if(document.getElementById('visor').innerHTML=='0010'){
