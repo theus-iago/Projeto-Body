@@ -17,6 +17,7 @@
       width:20px;
       border:2px solid black;
       border-radius:35px;
+      overflow:hidden;
     }
     @keyframes blink {
     0% {box-shadow:0 0 var(--cor_principal) inset;}
