@@ -103,8 +103,16 @@
     #btn {
       display:none;
     }
+    label {
+      
+    }
     #btn:checked ~ label {
-      color:red;
+      animation:text 5s ease;
+    }
+    @keyframes text {
+      0%{font-size:;}
+      50%{font-size:10px;}
+      100%{font-size:;}
     }
   </style>
 </head>
