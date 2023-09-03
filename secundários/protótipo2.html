@@ -100,13 +100,22 @@
     #btn-a , #btn-b {
       border-radius:40%;
     }
+    #btn {
+      display:block;
+    }
+    label {
+      display:block;
+    }
+    #btn::checked ~ label>.titulo {
+      color:red;
+    }
   </style>
 </head>
 <body>
   <div class="board">
     <div class="board-screen">
       <label for="btn">
-        <h1>START</h1>
+        <h1 class="titulo">START</h1>
       </label>
       <input type="checkbox" name="btn" id="btn">
       </div>
