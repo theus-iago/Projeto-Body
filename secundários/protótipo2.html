@@ -101,12 +101,9 @@
       border-radius:40%;
     }
     #btn {
-      display:block;
+      display:none;
     }
-    label {
-      display:block;
-    }
-    #btn::checked ~ label>.titulo {
+    #btn:checked ~ label {
       color:red;
     }
   </style>
@@ -114,10 +111,10 @@
 <body>
   <div class="board">
     <div class="board-screen">
-      <label for="btn">
-        <h1 class="titulo">START</h1>
-      </label>
       <input type="checkbox" name="btn" id="btn">
+      <label for="btn">
+       <h1 class="titulo">START</h1>
+      </label>
       </div>
   </div>
    <div class="controle-principal">
