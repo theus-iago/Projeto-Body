@@ -118,12 +118,14 @@ if(document.getElementById
     loader3.style.cssText='animation:;'
     loader3.style.cssText='transition:opacity 10s; opacity:100;'
     heart.style.cssText='transition:border 2s; transition-delay:1s; border-color:white;'
+    /*
+    animação de piscar os olhos abortada devido apresentar problemas com o navegador
     blink1.classList = "pupils";
     blink2.classList = "pupils";
     setTimeout(function() {
     blink1.classList.remove("pupils");
     blink2.classList.remove("pupils");
-    },6000);
+    },6000);*/
     }, 2000);
     simbolo.style.cssText='transition: color 10s; color:white;';
 }else if(document.getElementById('visor').innerHTML=='0010'){
